@@ -1,0 +1,225 @@
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    width: 100%;
+    background-color:midnightblue;
+    height: 10vh;
+}
+nav {
+    width: 100;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.8vw;
+    margin-left:2%;
+    color: white;
+    text-transform: uppercase;
+    transform: translate(0,0);
+    transition: letter-spacing 0.8s,transform 0.5s;
+
+}
+nav a:hover{
+    letter-spacing: 2px;
+    transform: translate(0,2px);
+}
+main{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+section:nth-of-type(1){
+    background-color: rgb(201, 201, 224);
+    width: 100%;
+    min-height: 40vh;
+    color: midnightblue;
+}
+section:nth-of-type(1) h1{
+    font-size: 10vw;
+}
+section:nth-of-type(1) h2{
+    font-size: 6vw;
+}
+section:nth-of-type(1) span{
+    display: block;
+    width: 100%;
+    font-size: 20vw;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+
+section:nth-of-type(2){
+    background-color:aliceblue;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
+    color: midnightblue;
+    
+
+}
+section:nth-of-type(2) .wrapflex{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;   
+    min-height: 80vh;
+
+}
+section:nth-of-type(2) .wrapflex a{
+    color: midnightblue;
+}
+
+section:nth-of-type(2) .wrapflex .left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+section:nth-of-type(2) .wrapflex .right{
+    width: 30%;
+    color: aliceblue;
+
+
+}
+.rotateCard{
+    min-height: 80vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    margin-bottom: 5%;
+
+}
+
+.wrapflex .right:hover .rotateCard {
+    transform: rotateY(180deg);
+  }
+.front{
+    
+    background-color:maroon; 
+    border-radius: 15px;
+    box-shadow: 0 0 15px orange;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.back{
+   background:midnightblue; 
+   border-radius: 15px;
+
+   box-shadow: 0 0 15px azure;
+   position: absolute;
+   top: 0;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+   width: 100%;
+   min-height: 80vh;
+}
+.wrapflex h1{
+    font-size: 3vw;
+}
+.wrapflex ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.wrapflex ul li{
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    font-size: 2vw;
+
+}
+
+
+section:nth-of-type(3){
+    background-color: rgb(201, 201, 224);
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-of-type(3)  h1{
+    text-transform: uppercase;
+    color: aliceblue;
+}
+section:nth-of-type(3) > h1{
+    text-transform: uppercase;
+    color: aliceblue;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom:2px solid azure;
+}
+.projectswrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+.item {
+    border-bottom:2px solid azure;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.item img{
+    margin-top: 2%;
+    width: 100%;
+}
+.item li{
+    text-transform: capitalize;
+
+}
+.item article:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
+.item article:nth-of-type(2){
+    width: 65%;
+    border-left: 2px solid azure;
+    display: flex;
+    flex-direction: column;
+}
+.item article:nth-of-type(2) h1, .item article:nth-of-type(2) h2 , .item article:nth-of-type(2) h3 ,
+ .item article:nth-of-type(2) ul , .item article:nth-of-type(2) p{
+    margin-left: 2%;
+}
+
+section:nth-of-type(4){
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 30vh;
+    
+}
+
+
+footer{
+    width: 100%;
+    background-color: rgb(139, 187, 133);
+    height: 10vh;
+}
