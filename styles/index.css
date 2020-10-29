@@ -6,7 +6,7 @@ html,body{
 
 header{
     width: 100%;
-    background-color:midnightblue;
+    background-color:#242423;
     height: 10vh;
 }
 nav {
@@ -30,21 +30,47 @@ nav a:hover{
     letter-spacing: 2px;
     transform: translate(0,2px);
 }
+
+
+nav a:nth-of-type(1){
+    height: 100%;
+    padding-right: 2%;
+    border-right: 2px solid white;
+
+    display: flex;
+    align-items: center;
+
+}
+nav a:nth-of-type(1):hover{
+    transform: translate(0,0);
+    letter-spacing: unset;
+
+    transition: none;
+
+}
+
 main{
     width:100%;
     display: flex;
     flex-direction: column;
 }
+
+
+
+
 section:nth-of-type(1){
-    background-color: rgb(201, 201, 224);
+    background-color: #F5CB5C;
     width: 100%;
     min-height: 40vh;
-    color: midnightblue;
+    color: #333533;
 }
 section:nth-of-type(1) h1{
+    margin-left: 2%;
     font-size: 10vw;
 }
 section:nth-of-type(1) h2{
+    margin-left: 2%;
+
     font-size: 6vw;
 }
 section:nth-of-type(1) span{
@@ -55,16 +81,17 @@ section:nth-of-type(1) span{
     justify-content: center;
     opacity: 0.5;
 }
-
+/*----------------------End Section 1--------------------------*/
 
 section:nth-of-type(2){
-    background-color:aliceblue;
+    background-color:#333533;
     width: 100%;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
-    color: midnightblue;
+    color: #F5CB5C;
     
 
 }
@@ -75,8 +102,10 @@ section:nth-of-type(2) .wrapflex{
     min-height: 80vh;
 
 }
+
+
 section:nth-of-type(2) .wrapflex a{
-    color: midnightblue;
+    color: silver;
 }
 
 section:nth-of-type(2) .wrapflex .left{
@@ -90,8 +119,14 @@ section:nth-of-type(2) .wrapflex .right{
 
 
 }
+section:nth-of-type(2) .wrapflex .right h2{
+    color: silver;
+    text-transform: uppercase;
+}
+
+
 .rotateCard{
-    min-height: 80vh;
+    min-height: 60vh;
     position: relative;
     width: 100%;
     text-align: center;
@@ -107,7 +142,7 @@ section:nth-of-type(2) .wrapflex .right{
   }
 .front{
     
-    background-color:maroon; 
+    background-color:#F5CB5C; 
     border-radius: 15px;
     box-shadow: 0 0 15px orange;
     position: absolute;
@@ -115,13 +150,13 @@ section:nth-of-type(2) .wrapflex .right{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     width: 100%;
-    min-height: 80vh;
+    min-height: 60vh;
 
     display: flex;
     flex-direction: column;
 }
 .back{
-   background:midnightblue; 
+   background:silver; 
    border-radius: 15px;
 
    box-shadow: 0 0 15px azure;
@@ -131,7 +166,7 @@ section:nth-of-type(2) .wrapflex .right{
    backface-visibility: hidden;
    transform: rotateY(180deg);
    width: 100%;
-   min-height: 80vh;
+   min-height: 60vh;
 }
 .wrapflex h1{
     font-size: 3vw;
@@ -144,12 +179,14 @@ section:nth-of-type(2) .wrapflex .right{
 
 }
 .wrapflex ul li{
-    list-style: none;
+    list-style: square;
     margin: 0;
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.2vw;
+    margin-top: 1%;
 
 }
+/*----------------------End Section 2--------------------------*/
 
 
 section:nth-of-type(3){
