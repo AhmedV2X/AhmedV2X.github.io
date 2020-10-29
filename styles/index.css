@@ -1,6 +1,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 
 }
 
@@ -272,7 +273,7 @@ section:nth-of-type(4) h1 ,section:nth-of-type(4) h2,section:nth-of-type(4) h3{
 section:nth-of-type(4) h1{
     font-size: 3vw;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-shadow: 0 0 5px silver, 0 0 5px #333, 0 0 5px #F5CB5C;
     text-align: center;
 } 
 footer{
