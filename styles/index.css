@@ -35,7 +35,8 @@ nav a:hover{
 nav a:nth-of-type(1){
     height: 100%;
     padding-right: 2%;
-    border-right: 2px solid white;
+    color: #F5CB5C;
+    border-right: 2px solid #F5CB5C;
 
     display: flex;
     align-items: center;
@@ -156,8 +157,9 @@ section:nth-of-type(2) .wrapflex .right h2{
     flex-direction: column;
 }
 .back{
-   background:silver; 
+   background-color:silver; 
    border-radius: 15px;
+   color: #333533;
 
    box-shadow: 0 0 15px azure;
    position: absolute;
@@ -190,7 +192,7 @@ section:nth-of-type(2) .wrapflex .right h2{
 
 
 section:nth-of-type(3){
-    background-color: rgb(201, 201, 224);
+    background-color: #EFDC9E;
     width: 100%;
     min-height: 60vh;
     display: flex;
@@ -199,15 +201,13 @@ section:nth-of-type(3){
 }
 section:nth-of-type(3)  h1{
     text-transform: uppercase;
-    color: aliceblue;
 }
 section:nth-of-type(3) > h1{
     text-transform: uppercase;
-    color: aliceblue;
     width: 90%;
     text-align: center;
     text-transform: uppercase;
-    border-bottom:2px solid azure;
+    border-bottom:2px solid #333533;
 }
 .projectswrap{
     display: flex;
@@ -217,7 +217,7 @@ section:nth-of-type(3) > h1{
 
 }
 .item {
-    border-bottom:2px solid azure;
+    border-bottom:2px solid #333533;
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -230,6 +230,16 @@ section:nth-of-type(3) > h1{
     text-transform: capitalize;
 
 }
+.item a{
+    background-color: #333;
+    color:#F5CB5C;
+    width: fit-content;
+    padding: 2%;
+    text-decoration: none;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+
+}
 .item article:nth-of-type(1){
     display: flex;
     flex-direction: column;
@@ -238,7 +248,7 @@ section:nth-of-type(3) > h1{
 }
 .item article:nth-of-type(2){
     width: 65%;
-    border-left: 2px solid azure;
+    border-left: 2px solid #333533;
     display: flex;
     flex-direction: column;
 }
@@ -248,15 +258,31 @@ section:nth-of-type(3) > h1{
 }
 
 section:nth-of-type(4){
-    background-color: aliceblue;
+    background-color: #333533;
+    color: #F5CB5C;
     width: 100%;
     min-height: 30vh;
     
 }
 
-
+section:nth-of-type(4) h1 ,section:nth-of-type(4) h2,section:nth-of-type(4) h3{
+    margin-left: 2%;
+    font-size: 1.2vw;
+}
+section:nth-of-type(4) h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+} 
 footer{
     width: 100%;
-    background-color: rgb(139, 187, 133);
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #333;
+    color: white;
+    font-size: 1.4vw;
+    min-height: 10vh;
 }
