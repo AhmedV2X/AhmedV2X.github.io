@@ -257,6 +257,15 @@ section:nth-of-type(3) > h1{
  .item article:nth-of-type(2) ul , .item article:nth-of-type(2) p{
     margin-left: 2%;
 }
+.item article:nth-of-type(2) a{
+    padding: 0;
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: unset;
+    color: crimson;
+    font-size: 1.4vw;
+}
+
 
 section:nth-of-type(4){
     background-color: #333533;
