@@ -296,3 +296,83 @@ footer{
     font-size: 1.4vw;
     min-height: 10vh;
 }
+@media only screen and (max-width: 1200px) {
+    section:nth-of-type(2) .wrapflex{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    section:nth-of-type(2) .wrapflex .right{
+        width:100%;
+    } 
+    section:nth-of-type(2) .wrapflex .left{
+    width:100%;
+    
+    }
+
+    .left h1,.right h1, #contactMe h1{
+        font-size: 6vw;
+
+    }
+    
+    .left h2,.right h2, #contactMe h2{
+        font-size: 5.5vw;
+    }
+    .left h3,.right h3, #contactMe h3{
+        font-size: 4.5vw;
+    }
+    .left a{
+        font-size: 4vw;
+        margin-bottom: 2%;
+    }
+    .wrapflex ul li{
+        list-style: square;
+        margin-top: 1.5%;
+        text-align: left;
+        font-size: 3.5vw;
+    
+    }
+
+    .rotateCard{
+        min-height: unset;
+        height: auto;
+    }
+    .rotateCard h1{
+        font-size: 4.5vw;
+    }
+    .front,.back{
+        min-height: 30vh;
+        height: auto;
+   
+    }
+    .front{
+        position: relative;
+    }
+    .front ul li,.back ul li{
+        font-size: 4vw;
+    }
+
+    .item {
+        border-bottom:3px solid #333533;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+    }
+    .item article:nth-of-type(1){
+        
+        width: 100%;
+        align-items: center;
+    }
+    .item article:nth-of-type(2){
+        margin-top: 2%;
+        width: 100%;
+        border-left: 0;
+        border-bottom: 2px solid #333533;
+
+
+    }
+    .item:last-of-type, .item:last-of-type article:nth-of-type(2){
+        border-bottom: 0;
+   
+    }
+}
