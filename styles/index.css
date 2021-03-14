@@ -115,6 +115,9 @@ section:nth-of-type(2) .wrapflex .left{
     flex-direction: column;
     width: 70%;
 }
+section:nth-of-type(2) .wrapflex .left p{
+    width:95%;
+}
 section:nth-of-type(2) .wrapflex .right{
     width: 30%;
     color: aliceblue;
