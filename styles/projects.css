@@ -213,6 +213,7 @@ canvas{
         perspective: unset;
         transform: unset;
         padding-bottom: 5%;
+        text-decoration: none;
     }
     .panel .item article{
         position: unset;
