@@ -26,39 +26,4 @@ function sectionOne() {
 
 }
 
-/*
-function sectionTwo(){
 
-
-    gsap.to("main section:nth-of-type(2) .left",
-    {duration:1,x:"3%",opacity:1,ease:"power1",
-
-        scrollTrigger:{
-           trigger:"main section:nth-of-type(2)",
-           start:"top 60%",// top of trigere hit view port
-           end:"bottom 30%",
-           //on enter , on leave on
-           toggleActions:"play reverse play reset"
-
-       }
-   })
-   gsap.to("main section:nth-of-type(2) .right",
-   {duration:1,x:"3%",opacity:1,ease:"power1",
-
-       scrollTrigger:{
-          trigger:"main section:nth-of-type(2)",
-          start:"top 60%",// top of trigere hit view port
-          end:"bottom 30%",
-          //on enter , on leave on
-          toggleActions:"play reverse play reset"
-
-      }
-  })
-
-}
-function openMe(){
-    gsap.timeline()
-    .to("#email-pop",{duration:1,opacity:1,display:"flex"})
-
-
-}*/
