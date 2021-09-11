@@ -1,113 +1,128 @@
-
-main{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
+/*
+ * @Description:
+ * @Author: Ahmed Mahmoud Hamdy
+ * @Date: 12-SEP-2021 00:45 AM
+ * @LastEditTime: 12-SEP-2021 00:45 AM
+ * @LastEditors: Ahmed Mahmoud Hamdy
+ */
+header {
+  border: unset;
 }
 
-
-section:nth-of-type(1){
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-
-    opacity: 0;
-
-
-
-}
-header  {
-    border: unset;
-
+main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-section:nth-of-type(1) .panel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width: 80%;
-    color: white;
-    margin-top: 2%;
-    background-color: rgba(0, 0, 0,0.7);
-    z-index: 2;
-    perspective: 5vw;
-    margin-bottom: 10%;
-
-    
-}
-.panel .part{
-    width: 100%;
-    
-
-    opacity: 0;
-    
-
+main section:nth-of-type(1) {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  opacity: 0;
 }
 
-.panel .part h1,.panel .part p,.panel .part p{
-    width: 90%;
+main section:nth-of-type(1) .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  color: white;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  -webkit-perspective: 5vw;
+          perspective: 5vw;
+  margin-bottom: 10%;
+}
 
+main section:nth-of-type(1) .panel h1 {
+  font-family: 'Coda Caption', sans-serif;
+  text-transform: uppercase;
+  font-size: 2vw;
 }
-section:nth-of-type(1) .panel article{
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
+main section:nth-of-type(1) .panel h2 {
+  margin-top: 0;
+  font-size: 1.7vw;
+  font-family: 'Coda Caption', sans-serif;
+  text-transform: uppercase;
 }
-section:nth-of-type(1) .panel h1{
-    font-family: 'Coda Caption', sans-serif;
-    text-transform: uppercase;
-    font-size: 2vw;
-}
-.panel h2{
-    margin-top: 0;
-    font-size: 1.7vw;
-    font-family: 'Coda Caption', sans-serif;
-    text-transform: uppercase;
 
+main section:nth-of-type(1) .panel p, main section:nth-of-type(1) .panel li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5vw;
+}
 
+main section:nth-of-type(1) .panel li {
+  list-style: square;
+  margin-bottom: 1vw;
 }
-.panel p, .panel li{
-    font-family: 'Roboto Slab', serif;
 
-    font-size: 1.5vw;
+main section:nth-of-type(1) .panel li a {
+  color: silver;
 }
-.panel li{
-    list-style: square;
+
+main section:nth-of-type(1) .panel article {
+  width: 85%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.panel li a{
-    color: silver;
+
+main section:nth-of-type(1) .panel article .part {
+  width: 100%;
+  opacity: 0;
 }
+
+main section:nth-of-type(1) .panel article .part h1, main section:nth-of-type(1) .panel article .part p {
+  width: 90%;
+}
+
 @media only screen and (max-width: 980px) {
-    section:nth-of-type(1) .panel{
-        width: 90%;
-        margin-bottom: 20%;
-    }
-    section:nth-of-type(1) .panel article{
-        width: 90%;
+  main section:nth-of-type(1) .panel {
+    width: 90%;
+    margin-bottom: 20%;
+  }
+  main section:nth-of-type(1) .panel h1 {
+    font-size: 4vw;
+  }
+  main section:nth-of-type(1) .panel h2 {
+    font-size: 3vw;
+  }
+  main section:nth-of-type(1) .panel p, main section:nth-of-type(1) .panel li {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+}
 
-    }
-    section:nth-of-type(1) .panel h1{
-        font-size: 4vw;
-    }
-    section:nth-of-type(1) .panel h2{
-        font-size: 3vw;
-    }
-
-    section:nth-of-type(1) .panel p, .panel li{
-        width: 100%;
-        font-size: 2vw;
-    }
-    @media only screen and (max-width: 720px){
-        .panel .part{
-            opacity: 1;
-        }
-
-    }
-
-
+@media only screen and (max-width: 720px) {
+  main section:nth-of-type(1) .panel .part {
+    opacity: 1;
+  }
 }
