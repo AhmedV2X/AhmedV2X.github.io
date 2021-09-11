@@ -62,4 +62,4 @@ function preSlide(totalSlides) {
         .to(ele, { duration: 0.7, opacity: 1 })
     document.getElementById("slideNumber").innerText = slideCount;
 
-}
+} 
