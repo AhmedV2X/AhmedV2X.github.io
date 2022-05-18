@@ -1,0 +1,687 @@
+/*
+ * @Description:
+ * @Author: Ahmed Mahmoud Hamdy
+ * @Date: 18-MAY-2022 05:45 PM
+ * @LastEditTime: 18-MAY-2022 05:45 PM
+ * @LastEditors: Ahmed Mahmoud Hamdy
+ */
+
+$color1: darkgreen;
+$color2: rgb(193, 63, 50);
+$color3: midnightblue;
+$color4: maroon;
+$color5: rgb(245, 149, 54);
+$font1: 'Coda Caption', sans-serif;
+$font2: 'Roboto Slab', serif;
+
+header {
+    border: unset;
+
+
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#project1 {
+    header {
+        background-color: darken($color: $color1, $amount: 10);
+    }
+
+    main {
+        section {
+            width: 100%;
+            min-height: 100vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-of-type(1) {
+                background-color: darken($color: $color1, $amount: 10);
+
+                h1 {
+                    font-family: $font2;
+                    color: white;
+                    font-size: 10vw;
+                    margin-top: 10vw;
+                    text-transform: uppercase;
+                    display: flex;
+
+                    div {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: grid;
+                // border: 2px solid white;
+                align-items: unset;
+
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    //   border: 2px solid red;
+                    padding: 1.5vw;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2.5vw;
+                    text-transform: uppercase;
+                }
+
+                p,
+                li {
+                    font-family: $font2;
+                    font-size: 2vw;
+                }
+
+                .first {
+                    background-color: white;
+
+                    li {
+                        margin-top: 1.2vw;
+                        list-style: square;
+                    }
+
+                }
+
+                .second {
+                    background-color: $color1;
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: darken($color: $color1, $amount: 10);
+                display: flex;
+                flex-direction: column;
+                align-items: unset;
+                min-height: unset;
+                padding: 2vw;
+                box-sizing: border-box;
+
+                a {
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    span {
+                        &:nth-of-type(1) {
+                            font-family: $font1;
+                            font-size: 2vw;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            font-family: $font2;
+                            font-size: 6vw;
+
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 6vw;
+
+                        span {
+                            &:nth-of-type(1) {
+                                font-family: $font1;
+                                font-size: 1.5vw;
+
+                            }
+
+                            &:nth-of-type(2) {
+                                font-family: $font2;
+                                font-size: 4vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#project2 {
+    header {
+        background-color: darken($color: $color2, $amount: 10);
+    }
+
+    main {
+        section {
+            width: 100%;
+            min-height: 100vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-of-type(1) {
+                background-color: darken($color: $color2, $amount: 10);
+
+                h1 {
+                    font-family: $font2;
+                    color: white;
+                    font-size: 10vw;
+                    margin-top: 10vw;
+                    text-transform: uppercase;
+                    display: flex;
+
+                    div {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: grid;
+                // border: 2px solid white;
+                align-items: unset;
+
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    //   border: 2px solid red;
+                    padding: 1.5vw;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2.5vw;
+                    text-transform: uppercase;
+                }
+
+                p,
+                li {
+                    font-family: $font2;
+                    font-size: 2vw;
+                }
+
+                .first {
+                    background-color: white;
+
+                    li {
+                        margin-top: 1.2vw;
+                        list-style: square;
+                    }
+
+                }
+
+                .second {
+                    background-color: $color2;
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: darken($color: $color2, $amount: 10);
+                display: flex;
+                flex-direction: column;
+                align-items: unset;
+                min-height: unset;
+                padding: 2vw;
+                box-sizing: border-box;
+
+                a {
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    span {
+                        &:nth-of-type(1) {
+                            font-family: $font1;
+                            font-size: 2vw;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            font-family: $font2;
+                            font-size: 6vw;
+
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 6vw;
+
+                        span {
+                            &:nth-of-type(1) {
+                                font-family: $font1;
+                                font-size: 1.5vw;
+
+                            }
+
+                            &:nth-of-type(2) {
+                                font-family: $font2;
+                                font-size: 4vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#project3 {
+    header {
+        background-color: darken($color: $color3, $amount: 10);
+    }
+
+    main {
+        section {
+            width: 100%;
+            min-height: 100vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-of-type(1) {
+                background-color: darken($color: $color3, $amount: 10);
+
+                h1 {
+                    font-family: $font2;
+                    color: white;
+                    font-size: 10vw;
+                    margin-top: 10vw;
+                    text-transform: uppercase;
+                    display: flex;
+
+                    div {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: grid;
+                // border: 2px solid white;
+                align-items: unset;
+
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    //   border: 2px solid red;
+                    padding: 1.5vw;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2.5vw;
+                    text-transform: uppercase;
+                }
+
+                p,
+                li {
+                    font-family: $font2;
+                    font-size: 2vw;
+                }
+
+                .first {
+                    background-color: white;
+
+                    li {
+                        margin-top: 1.2vw;
+                        list-style: square;
+                    }
+
+                }
+
+                .second {
+                    background-color: $color3;
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: darken($color: $color3, $amount: 10);
+                display: flex;
+                flex-direction: column;
+                align-items: unset;
+                min-height: unset;
+                padding: 2vw;
+                box-sizing: border-box;
+
+                a {
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    span {
+                        &:nth-of-type(1) {
+                            font-family: $font1;
+                            font-size: 2vw;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            font-family: $font2;
+                            font-size: 6vw;
+
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 6vw;
+
+                        span {
+                            &:nth-of-type(1) {
+                                font-family: $font1;
+                                font-size: 1.5vw;
+
+                            }
+
+                            &:nth-of-type(2) {
+                                font-family: $font2;
+                                font-size: 4vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#project4 {
+    header {
+        background-color: darken($color: $color4, $amount: 10);
+    }
+
+    main {
+        section {
+            width: 100%;
+            min-height: 100vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-of-type(1) {
+                background-color: darken($color: $color4, $amount: 10);
+
+                h1 {
+                    font-family: $font2;
+                    color: white;
+                    font-size: 10vw;
+                    margin-top: 10vw;
+                    text-transform: uppercase;
+                    display: flex;
+
+                    div {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: grid;
+                // border: 2px solid white;
+                align-items: unset;
+
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    //   border: 2px solid red;
+                    padding: 1.5vw;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2.5vw;
+                    text-transform: uppercase;
+                }
+
+                p,
+                li {
+                    font-family: $font2;
+                    font-size: 2vw;
+                }
+
+                .first {
+                    background-color: white;
+
+                    li {
+                        margin-top: 1.2vw;
+                        list-style: square;
+                    }
+
+                }
+
+                .second {
+                    background-color: $color4;
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: darken($color: $color4, $amount: 10);
+                display: flex;
+                flex-direction: column;
+                align-items: unset;
+                min-height: unset;
+                padding: 2vw;
+                box-sizing: border-box;
+
+                a {
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    span {
+                        &:nth-of-type(1) {
+                            font-family: $font1;
+                            font-size: 2vw;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            font-family: $font2;
+                            font-size: 6vw;
+
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 6vw;
+
+                        span {
+                            &:nth-of-type(1) {
+                                font-family: $font1;
+                                font-size: 1.5vw;
+
+                            }
+
+                            &:nth-of-type(2) {
+                                font-family: $font2;
+                                font-size: 4vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#project5 {
+    header {
+        background-color: darken($color: $color5, $amount: 10);
+    }
+
+    main {
+        section {
+            width: 100%;
+            min-height: 100vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-of-type(1) {
+                background-color: darken($color: $color5, $amount: 10);
+
+                h1 {
+                    font-family: $font2;
+                    color: white;
+                    font-size: 10vw;
+                    margin-top: 10vw;
+                    text-transform: uppercase;
+                    display: flex;
+
+                    div {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: grid;
+                // border: 2px solid white;
+                align-items: unset;
+
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    //   border: 2px solid red;
+                    padding: 1.5vw;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-family: $font1;
+                    font-size: 2.5vw;
+                    text-transform: uppercase;
+                }
+
+                p,
+                li {
+                    font-family: $font2;
+                    font-size: 2vw;
+                }
+
+                .first {
+                    background-color: white;
+
+                    li {
+                        margin-top: 1.2vw;
+                        list-style: square;
+                    }
+
+                }
+
+                .second {
+                    background-color: $color5;
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: darken($color: $color5, $amount: 10);
+                display: flex;
+                flex-direction: column;
+                align-items: unset;
+                min-height: unset;
+                padding: 2vw;
+                box-sizing: border-box;
+
+                a {
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    span {
+                        &:nth-of-type(1) {
+                            font-family: $font1;
+                            font-size: 2vw;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            font-family: $font2;
+                            font-size: 6vw;
+
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 6vw;
+
+                        span {
+                            &:nth-of-type(1) {
+                                font-family: $font1;
+                                font-size: 1.5vw;
+
+                            }
+
+                            &:nth-of-type(2) {
+                                font-family: $font2;
+                                font-size: 4vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,182 @@
+/*
+ * @Description:
+ * @Author: Ahmed Mahmoud Hamdy
+ * @Date: 18-MAY-2022 05:45 PM
+ * @LastEditTime: 18-MAY-2022 05:45 PM
+ * @LastEditors: Ahmed Mahmoud Hamdy
+ */
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+header {
+    display: none;
+    height: 10vh;
+    width: 0;
+    background-color: black;
+    border-bottom: 5px solid white;
+
+    nav {
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Coda Caption', sans-serif;
+        opacity: 0;
+
+        div {
+
+            h1,
+            a {
+                color: white;
+
+            }
+        }
+
+        .left {
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+
+            h1 {
+                color: black;
+                background-color: white;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-width: 50%;
+
+            a {
+                text-decoration: none;
+                letter-spacing: 3px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 1.3vw;
+                cursor: pointer;
+                z-index: 2;
+                transition: color 1s;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 3%;
+                    width: 0%;
+                    background-color: white;
+                    z-index: -1;
+                    transition: width 1s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                span:nth-of-type(2) {
+                    text-transform: uppercase;
+
+                }
+
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+    }
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    header {
+        nav {
+            .left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 4vw;
+                }
+
+            }
+
+            .right {
+                width: fit-content;
+                min-width: unset;
+                margin-right: 5%;
+
+                a {
+                    display: none;
+                }
+
+                button {
+                    height: fit-content;
+                    width: fit-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: unset;
+                    background-color: unset;
+                    cursor: pointer;
+
+                    span {
+                        font-size: 4vw;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobileMenu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        opacity: 0;
+
+        a {
+            text-decoration: none;
+            letter-spacing: 3px;
+            position: relative;
+            cursor: pointer;
+            font-size: 4.5vw;
+            margin-top: 2%;
+            color: black;
+            font-family: 'Coda Caption', sans-serif;
+        }
+
+        button {
+            background-color: unset;
+            font-size: 4vw;
+            color: black;
+            font-family: 'Coda Caption', sans-serif;
+            border: unset;
+            outline: unset;
+            cursor: pointer;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    }
+}
