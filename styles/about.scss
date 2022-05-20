@@ -127,9 +127,9 @@ main {
                         }
 
                         .second {
-                            width: 60%;
+                            width: 40%;
 
-                            /// border: 2px solid red
+                            // border: 2px solid red
                         }
                     }
 
@@ -238,6 +238,10 @@ main {
 
                             .second {
                                 margin-bottom: 2vw;
+                                min-height: 50vh;
+                                width: 100%;
+                                margin-left: unset;
+
                             }
                         }
                     }
