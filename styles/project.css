@@ -110,6 +110,11 @@ main {
   color: white;
 }
 
+#project1 main section:nth-of-type(3) iframe {
+  width: 100%;
+  height: 100vh;
+}
+
 #project1 main section:nth-of-type(4) {
   background-color: #003100;
   display: -webkit-box;
@@ -251,6 +256,11 @@ main {
 #project2 main section:nth-of-type(2) .second h1,
 #project2 main section:nth-of-type(2) .second p {
   color: white;
+}
+
+#project2 main section:nth-of-type(3) iframe {
+  width: 100%;
+  height: 100vh;
 }
 
 #project2 main section:nth-of-type(4) {
@@ -396,6 +406,11 @@ main {
   color: white;
 }
 
+#project3 main section:nth-of-type(3) iframe {
+  width: 100%;
+  height: 100vh;
+}
+
 #project3 main section:nth-of-type(4) {
   background-color: #101046;
   display: -webkit-box;
@@ -537,6 +552,11 @@ main {
 #project4 main section:nth-of-type(2) .second h1,
 #project4 main section:nth-of-type(2) .second p {
   color: white;
+}
+
+#project4 main section:nth-of-type(3) iframe {
+  width: 100%;
+  height: 100vh;
 }
 
 #project4 main section:nth-of-type(4) {
@@ -736,5 +756,91 @@ main {
 #project5 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(2) {
   font-family: "Roboto Slab", serif;
   font-size: 4vw;
+}
+
+@media only screen and (max-width: 980px) {
+  #project1 main section,
+  #project2 main section,
+  #project3 main section,
+  #project4 main section {
+    min-height: unset;
+  }
+  #project1 main section:nth-of-type(1),
+  #project2 main section:nth-of-type(1),
+  #project3 main section:nth-of-type(1),
+  #project4 main section:nth-of-type(1) {
+    min-height: 50vh;
+  }
+  #project1 main section:nth-of-type(1) h1,
+  #project2 main section:nth-of-type(1) h1,
+  #project3 main section:nth-of-type(1) h1,
+  #project4 main section:nth-of-type(1) h1 {
+    margin-top: 20vw;
+  }
+  #project1 main section:nth-of-type(2),
+  #project2 main section:nth-of-type(2),
+  #project3 main section:nth-of-type(2),
+  #project4 main section:nth-of-type(2) {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #project1 main section:nth-of-type(2) h1,
+  #project2 main section:nth-of-type(2) h1,
+  #project3 main section:nth-of-type(2) h1,
+  #project4 main section:nth-of-type(2) h1 {
+    font-size: 5.5vw;
+  }
+  #project1 main section:nth-of-type(2) p,
+  #project1 main section:nth-of-type(2) li,
+  #project2 main section:nth-of-type(2) p,
+  #project2 main section:nth-of-type(2) li,
+  #project3 main section:nth-of-type(2) p,
+  #project3 main section:nth-of-type(2) li,
+  #project4 main section:nth-of-type(2) p,
+  #project4 main section:nth-of-type(2) li {
+    font-size: 5vw;
+  }
+  #project1 main section:nth-of-type(2) .first li,
+  #project2 main section:nth-of-type(2) .first li,
+  #project3 main section:nth-of-type(2) .first li,
+  #project4 main section:nth-of-type(2) .first li {
+    margin-top: 3vw;
+  }
+  #project1 main section:nth-of-type(4) a,
+  #project2 main section:nth-of-type(4) a,
+  #project3 main section:nth-of-type(4) a,
+  #project4 main section:nth-of-type(4) a {
+    margin-top: 8vw;
+  }
+  #project1 main section:nth-of-type(4) a span:nth-of-type(1),
+  #project2 main section:nth-of-type(4) a span:nth-of-type(1),
+  #project3 main section:nth-of-type(4) a span:nth-of-type(1),
+  #project4 main section:nth-of-type(4) a span:nth-of-type(1) {
+    font-size: 5vw;
+  }
+  #project1 main section:nth-of-type(4) a span:nth-of-type(2),
+  #project2 main section:nth-of-type(4) a span:nth-of-type(2),
+  #project3 main section:nth-of-type(4) a span:nth-of-type(2),
+  #project4 main section:nth-of-type(4) a span:nth-of-type(2) {
+    font-size: 12vw;
+  }
+  #project1 main section:nth-of-type(4) a:nth-of-type(2),
+  #project2 main section:nth-of-type(4) a:nth-of-type(2),
+  #project3 main section:nth-of-type(4) a:nth-of-type(2),
+  #project4 main section:nth-of-type(4) a:nth-of-type(2) {
+    margin-bottom: 8vw;
+  }
+  #project1 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(1),
+  #project2 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(1),
+  #project3 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(1),
+  #project4 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(1) {
+    font-size: 4.5vw;
+  }
+  #project1 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(2),
+  #project2 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(2),
+  #project3 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(2),
+  #project4 main section:nth-of-type(4) a:nth-of-type(2) span:nth-of-type(2) {
+    font-size: 10vw;
+  }
 }
 /*# sourceMappingURL=project.css.map */
