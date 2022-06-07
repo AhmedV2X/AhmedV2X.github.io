@@ -16,6 +16,7 @@ function runProjects() {
     sectionThree();
     sectionFour();
     sectionFive();
+    sectionSix();
 }
 
 function animateMenu() {
@@ -97,13 +98,8 @@ function sectionOne() {
 
             //  delay: anime.stagger(200)
         })
-
-
-
 }
-
 function sectionTwo() {
-
     animeTL
         .add({
             targets: '.headLetters2',
@@ -112,13 +108,15 @@ function sectionTwo() {
             easing: 'linear',
             delay: anime.stagger(200)
 
-            // delay: anime.stagger(250)
+            //delay: anime.stagger(250)
         })
         .add({
             targets: '#img2',
             opacity: 1,
             easing: 'linear',
             delay: anime.stagger(200)
+
+            // delay: anime.stagger(250)
         })
         .add({
             targets: '.bodyLetters2',
@@ -129,21 +127,13 @@ function sectionTwo() {
 
             //  delay: anime.stagger(200)
         })
-    /*for (let i = 2; i <= 5; i++) {
-        ScrollTrigger.create({
-            trigger: "section:nth-of-type(" + i + ")",
-            onEnter: scrollEnterAnimation(i),
-            onLeave: scrollEnterAnimation(i),
-            onEnterBack: scrollEnterAnimation(i),
-            onLeaveBack: scrollEnterAnimation(i),
-            //    toggleActions: "play reverse play reverse",
 
-        })
 
-    }*/
 
 }
+
 function sectionThree() {
+
     animeTL
         .add({
             targets: '.headLetters3',
@@ -169,8 +159,20 @@ function sectionThree() {
 
             //  delay: anime.stagger(200)
         })
-}
+    /*for (let i = 2; i <= 5; i++) {
+        ScrollTrigger.create({
+            trigger: "section:nth-of-type(" + i + ")",
+            onEnter: scrollEnterAnimation(i),
+            onLeave: scrollEnterAnimation(i),
+            onEnterBack: scrollEnterAnimation(i),
+            onLeaveBack: scrollEnterAnimation(i),
+            //    toggleActions: "play reverse play reverse",
 
+        })
+
+    }*/
+
+}
 function sectionFour() {
     animeTL
         .add({
@@ -218,6 +220,34 @@ function sectionFive() {
         })
         .add({
             targets: '.bodyLetters5',
+            opacity: 1,
+            translateX: 5,
+            easing: 'linear',
+            delay: anime.stagger(200)
+
+            //  delay: anime.stagger(200)
+        })
+}
+
+function sectionSix() {
+    animeTL
+        .add({
+            targets: '.headLetters6',
+            translateY: -10,
+            opacity: 1,
+            easing: 'linear',
+            delay: anime.stagger(200)
+
+            // delay: anime.stagger(250)
+        })
+        .add({
+            targets: '#img6',
+            opacity: 1,
+            easing: 'linear',
+            delay: anime.stagger(200)
+        })
+        .add({
+            targets: '.bodyLetters6',
             opacity: 1,
             translateX: 5,
             easing: 'linear',
