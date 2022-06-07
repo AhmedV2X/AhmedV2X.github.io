@@ -27,7 +27,7 @@ main {
     flex-direction: column;
 }
 
-#project1 {
+#project2 {
     header {
         background-color: darken($color: $color1, $amount: 10);
     }
@@ -43,6 +43,7 @@ main {
 
             &:nth-of-type(1) {
                 background-color: darken($color: $color1, $amount: 10);
+                //border: 2px solid red;
 
                 h1 {
                     font-family: $font2;
@@ -165,7 +166,8 @@ main {
     }
 }
 
-#project2 {
+
+#project3 {
     header {
         background-color: darken($color: $color2, $amount: 10);
     }
@@ -304,7 +306,8 @@ main {
 
 }
 
-#project3 {
+#project1,
+#project4 {
     header {
         background-color: darken($color: $color3, $amount: 10);
     }
@@ -443,7 +446,7 @@ main {
 
 }
 
-#project4 {
+#project5 {
     header {
         background-color: darken($color: $color4, $amount: 10);
     }
@@ -582,7 +585,7 @@ main {
 
 }
 
-#project5 {
+#project6 {
     header {
         background-color: darken($color: $color5, $amount: 10);
     }
@@ -719,7 +722,8 @@ main {
     #project1,
     #project2,
     #project3,
-    #project4 {
+    #project4,
+    #project5 {
         main {
             section {
                 min-height: unset;

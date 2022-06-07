@@ -121,27 +121,29 @@ section {
         }
     }
 
-    &:nth-of-type(1) a {
+
+    &:nth-of-type(2) a {
         background-color: darkgreen;
         color: white;
     }
 
-    &:nth-of-type(2) a {
+    &:nth-of-type(3) a {
         background-color: rgb(193, 63, 50);
         color: white;
     }
 
-    &:nth-of-type(3) a {
+    &:nth-of-type(1) a,
+    &:nth-of-type(4) a {
         background-color: midnightblue;
         color: white;
     }
 
-    &:nth-of-type(4) a {
+    &:nth-of-type(5) a {
         background-color: maroon;
         color: white;
     }
 
-    &:nth-of-type(5) a {
+    &:nth-of-type(6) a {
         background-color: rgb(245, 149, 54);
         color: white;
     }
