@@ -43,6 +43,7 @@ main {
 
             article {
                 width: 100%;
+                // border: 2px solid red;
                 margin-top: 2%;
                 margin-bottom: 2%;
                 display: flex;
@@ -72,8 +73,15 @@ main {
                     // border: 2px solid blue;
                     color: black;
 
+                    h1 {
+                        margin-left: 5%;
+
+                    }
+
                     .articleBody {
-                        //        border: 21px solid green;
+                        //border: 3px solid green;
+                        width: 90%;
+                        margin-left: 5%;
 
                         p,
                         li {
@@ -95,6 +103,7 @@ main {
                         // margin-bottom: 0;
                         //   border: 2px solid red;
                         width: fit-content;
+                        margin-left: 5%;
                     }
 
 
@@ -109,7 +118,11 @@ main {
                         //       border: 2px solid red;
 
                         .first {
-                            width: 30%;
+                            width: 90%;
+                            display: flex;
+                            // border: 2px solid red;
+                            flex-direction: row;
+                            justify-content: space-around;
 
 
                             ul {
@@ -127,11 +140,19 @@ main {
 
                         }
 
+                        /*
                         .second {
                             width: 40%;
+                            border: 2px solid red;
+
+                            h1 {
+                                color: white;
+                                position: absolute;
+                                top: 0;
+                            }
 
                             // border: 2px solid red
-                        }
+                        }*/
                     }
 
                 }
@@ -232,6 +253,8 @@ main {
                             }
 
                             .first {
+                                flex-direction: column;
+
                                 ul {
                                     li {
                                         font-size: 3.8vw;
@@ -239,13 +262,7 @@ main {
                                 }
                             }
 
-                            .second {
-                                margin-bottom: 2vw;
-                                min-height: 50vh;
-                                width: 100%;
-                                margin-left: unset;
 
-                            }
                         }
                     }
 
