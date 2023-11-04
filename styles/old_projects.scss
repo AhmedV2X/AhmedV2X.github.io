@@ -1,0 +1,377 @@
+/*
+ * @Description:
+ * @Author: Ahmed Mahmoud Hamdy
+ * @Date: 18-MAY-2022 05:45 PM
+ * @LastEditTime: 18-MAY-2022 05:45 PM
+ * @LastEditors: Ahmed Mahmoud Hamdy
+ */
+header {
+    border: unset;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+section {
+    //border: 2px solid red;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //opacity: 0;
+
+
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        padding: 1.4vw;
+        box-sizing: border-box;
+
+        // border: 2px solid red;
+
+
+        h1 {
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 800;
+            font-size: 6vw;
+            margin-top: 5vw;
+
+
+
+            div {
+                opacity: 0;
+            }
+
+            // border: 2px solid red;
+        }
+
+        img,
+        p,
+        a {
+            opacity: 0;
+        }
+
+        img {
+            width: 30%;
+
+        }
+
+        p,
+        a {
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        p {
+
+            font-size: 1.8vw;
+            margin-top: 2vw;
+
+
+            width: 45%;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 1.2vw;
+            font-size: 3vw;
+            width: fit-content;
+            height: fit-content;
+
+        }
+    }
+
+
+
+    &:nth-of-type(even) {
+        background-color: black;
+
+        h1,
+        p {
+            color: white;
+        }
+
+        a {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    &:nth-of-type(odd) {
+        background-color: white;
+
+        h1,
+        p {
+            color: black;
+        }
+
+        a {
+            background-color: black;
+            color: white;
+        }
+    }
+
+
+    &:nth-of-type(2) a {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    &:nth-of-type(3) a {
+        background-color: rgb(193, 63, 50);
+        color: white;
+    }
+
+    &:nth-of-type(1) a,
+    &:nth-of-type(4) a {
+        background-color: midnightblue;
+        color: white;
+    }
+
+    &:nth-of-type(5) a {
+        background-color: maroon;
+        color: white;
+    }
+
+    &:nth-of-type(6) a {
+        background-color: rgb(245, 149, 54);
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    section {
+        min-height: unset;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 5vw;
+            }
+
+            img {
+                width: 80%;
+            }
+
+            p {
+                font-size: 4.5vw;
+                width: 80%;
+            }
+
+            a {
+                font-size: 3.9vw;
+            }
+        }
+    }
+}
+
+/*
+section:nth-of-type(1){
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+    position: relative;
+    opacity: 0;
+    canvas{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    
+    }
+    .sliderC{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        position: fixed;
+        z-index: 2;
+        top: 25%;
+        right: 3%;
+        .arrowup{
+            transform: rotate(180deg);
+        }
+        .arrowup,.arrowdown{
+            font-size: 2vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            cursor: pointer;
+            width: fit-content;
+        }
+        #slideNumber{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+        }
+        
+        
+    }
+    .panel{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: fit-content;
+        color: black;
+   
+        opacity: 0;
+        z-index: 2;
+        h1{
+            margin-bottom: 0;
+            font-size: 2vw;
+            font-family: 'Coda Caption', sans-serif;
+            text-transform: uppercase;
+        }
+        h2{
+            margin-top: 0;
+            font-size: 3vw;
+            transform: rotateX(15deg);
+            font-family: 'Roboto Slab', serif;        
+        }
+        .item{
+            width:50vw;
+            height: fit-content;
+            margin-bottom: 5%;
+            position: relative;
+            border-radius: 3vw;
+            &:hover{
+                transform: rotateY(0deg) rotateZ(0deg);
+            }
+            img{
+                border-radius: 1vw;
+                box-shadow: 0 0 5px black;
+                width: 100%;
+            }
+            article{
+                border-radius: 1vw;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: rgba(0, 0, 0,0.7);
+                color: white;
+                h1,h2,p{
+                    width: 90%;
+                }
+                h1,h2{
+                    text-transform: uppercase;
+                    font-family: 'Coda Caption', sans-serif;
+                }
+                p,li{
+                    font-family: 'Roboto Slab', serif;
+                }
+                h2,p,li{
+                    font-size: 1vw;
+                }
+                h1{
+                    text-align: center;
+                    font-size: 1.2vw;
+
+                }
+
+                ul{
+                    width: 85%;
+                    margin-top: 0;
+                
+                }
+                &:hover{
+
+                    opacity: 1;
+                }
+            }
+        }
+        &:nth-of-type(1){
+            display: flex;
+            opacity: 1;
+        }
+
+    }
+
+
+}
+@media only screen and (max-width: 980px) {
+    main{
+        section:nth-of-type(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .sliderC{
+                position: unset;
+                top: unset;
+                right: unset;
+                z-index: 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 10%;
+                width: 60%;
+                min-width: fit-content;
+                background-color: rgba(0, 0, 0,0.7);
+                .arrowup,.arrowdown{
+                    font-size: 3vw;
+                    margin-top: 3vw;
+                    margin-bottom: 3vw;
+                    cursor: pointer;
+                    width: fit-content;
+                    color: white;
+                }
+                #slideNumber{
+                    font-size: 3vw;
+                    color: white;
+                }
+            }
+            .panel{
+                width: 90%;
+                z-index: 2;
+                h1{
+                    font-size: 4vw;
+                }
+                
+                .item{
+                    width: 100%;
+
+                    padding-bottom: 5%;
+                    text-decoration: none;
+                    article{
+                        opacity: 1;
+                        h1{
+                            font-size: 4vw;
+                        }
+                        h2{
+                            font-size: 3.5vw;
+                        }
+                        p,li{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+*/

@@ -1,8 +1,34 @@
+let tl2 = gsap.timeline()
 function runAbout() {
     animateMenu();
-    sectionOne();
+    // sectionOne();
+    setTimeout(() => {
+        // sectionOne();
+    }, 1000);
 
 }
+
+function sectionOne() {
+    tl2.to("section:nth-of-type(1) .ruler:nth-of-type(1)", {
+        width: 0, opacity: 0, duration: 1.5
+    })
+    tl2.to("section:nth-of-type(1) .ruler:nth-of-type(2)", {
+        width: 0, opacity: 0, duration: 1.5
+    })
+    tl2.to("section:nth-of-type(1) .ruler:nth-of-type(3)", {
+        width: 0, opacity: 0, duration: 0.5
+    })
+    tl2.to("section:nth-of-type(1) .ruler", {
+        display: "none", duration: 0
+    })
+
+    //tl2.to("section:nth-of-type(1) .panel:nth-of-type(1)", { opacity: 0 })
+
+
+    //  tl2.add(tween1)
+
+}
+/*
 function sectionOne() {
     gsap.timeline()
         .to("section:nth-of-type(1)", { duration: 1, opacity: 1, delay: 1.2 })
@@ -28,15 +54,9 @@ function sectionOne() {
 
 
 }
-function animateMenu() {
-    gsap.timeline()
 
-        .to("header", { duration: 0, display: "flex" })
-        .to("header", { duration: 1, width: "100%" })
-        .to("nav", { duration: 1, opacity: 1, height: "100%" })
+*/
 
-
-}
 
 /*
 function sectionOne() {

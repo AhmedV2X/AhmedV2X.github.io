@@ -26,7 +26,8 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-family: 'Coda Caption', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 500;
         opacity: 0;
 
         div {
@@ -164,14 +165,14 @@ header {
             font-size: 4.5vw;
             margin-top: 2%;
             color: black;
-            font-family: 'Coda Caption', sans-serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
 
         button {
             background-color: unset;
             font-size: 4vw;
             color: black;
-            font-family: 'Coda Caption', sans-serif;
+            font-family: 'Bebas Neue', sans-serif;
             border: unset;
             outline: unset;
             cursor: pointer;
